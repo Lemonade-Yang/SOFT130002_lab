@@ -1,0 +1,142 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 50px;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:last-child{
+     float:right;
+    background-color: #3763af;
+}
+ul li a{
+    display: block;
+    color: #969696;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+aside ul li a {
+    padding: 20px 2px;
+    line-height: 1.5;
+}
+#logo{
+    padding: 0 20px;
+    align-content: center;
+}
+#register{
+    color: white;
+}
+nav ul li a:hover{
+    color: #171717;
+    font-weight: 600;
+}
+aside ul li a:hover{
+    color: #171717;
+    font-weight: 600;
+    background-color: rgba(55, 99, 175, 0.18);
+}
+#nav-box{
+    background-color: white;
+    padding: 0 450px;
+    box-shadow: 0 2px 4px rgba(26,26,26,0.3);
+}
+body{
+    background-color: #f6f6f6;
+}
+aside{
+    position: relative;
+    padding: 20px 15px;
+    border-bottom: 1px solid #f6f6f6
+}
+#body-container{
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 2000px;
+    padding: 0 350px;
+    margin: 10px auto;
+    overflow:hidden;
+}
+.left{
+    width:90px;
+    background:white;
+    float:left;
+    box-shadow: 0 2px 4px rgba(26,26,26,0.3);
+    height: 350px;
+    border-radius: 4px;
+}
+.right{
+    width:900px;
+    margin-bottom:-3000px;
+    padding-bottom:3000px;
+    background:white;
+    float:right;
+    box-shadow: 0 2px 4px rgba(26,26,26,0.3);
+    border-radius: 4px;
+}
+.center{
+        width:20px;
+        margin:0 10px 0 10px;
+        background-color: rgba(255,255,255,0);
+    }
+#recommend{
+    padding: 22px 0 10px 30px;
+    color: #3763af;
+    font-size: 15pt;
+    height: 30px;
+    border-bottom: 3px solid #f0f2f7;
+}
+article{
+    padding: 20px 20px 0;
+    border-bottom: 1px solid #f0f2f7;
+}
+article header{
+    font-size: 18px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 2;
+    color: #1a1a1a;
+}
+.content{
+    line-height: 1.67;
+    font-size: 15px;
+    color: #1a1a1a;
+}
+button.full-text {
+    padding: 0;
+    margin-left: 4px;
+    color: #175199;
+    height: auto;
+    line-height: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+button.like{
+    font-size: 11pt;
+    line-height: 25px;
+    padding: 2px 12px 0;
+    color: #0084ff;
+    background: rgba(0,132,255,.1);
+    border-color: transparent;
+}
+article footer{
+    padding: 10px 0 20px;
+}
+pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#page{
+    text-align: center;
+    color: #3763af;
+}
+#page span{
+    text-decoration: underline #1a1a1a;
+    color: #1a1a1a;
+}
