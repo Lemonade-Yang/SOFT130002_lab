@@ -163,3 +163,10 @@ b. Set是集合，元素可以为多类型。不添加重复元素，一般无�
 c. Array是数组，元素为同类型。有序，以数组下标（整型）为索引。  
 常见使用有：array\[index\];array.length;array.indexOf(value);
 
+## github页面截图&调试窗口&命令行截图
+
+![avatar](/image/github_page.png)
+
+![avatar](/image/console_page.png)
+
+![avatar](/image/shell_page.png)
