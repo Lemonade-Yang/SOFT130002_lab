@@ -165,8 +165,8 @@ c. Array是数组，元素为同类型。有序，以数组下标（整型）为
 
 ## github页面截图&调试窗口&命令行截图
 
-![avatar](/image/github_page.png)
+![avatar1](image/github_page.png)
 
-![avatar](/image/console_page.png)
+![avatar2](image/console_page.png)
 
-![avatar](/image/shell_page.png)
+![avatar3](image/shell_page.png)
