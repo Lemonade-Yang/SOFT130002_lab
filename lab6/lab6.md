@@ -81,7 +81,7 @@ let re=/\S+/ig;
 
 ### twoSum(nums, target):
 
-遍历数组，将**{数值：下标}**作为键值对存入map中。
+遍历数组，将```{数值：下标}```作为键值对存入map中。
 
 如果map中存在等于target-num的key，则说明，当前位置的数可与该value位置的数相加得target。
 
@@ -90,14 +90,14 @@ let re=/\S+/ig;
 该算法用以下几个变量保存位置：
 
 ```js
-	let maxLength=0;//最大子串长度
-    let minIndexWithoutRepeat=-1;//往右，直到当前位置，无重复字母出现的最小下标
-	let currentMax;//当前位置往左最长无重复字母长度
+let maxLength=0;//最大子串长度
+let minIndexWithoutRepeat=-1;//往右，直到当前位置，无重复字母出现的最小下标
+let currentMax;//当前位置往左最长无重复字母长度
 ```
 
 算法为：
 
-每读取一个字母则将**{字母：最后出现的位置}**作为键值对存入map中。
+每读取一个字母则将```{字母：最后出现的位置}```作为键值对存入map中。
 
 a. 如果map中不含该字母，即该字母第一次出现，当前最大子串应为：
 
