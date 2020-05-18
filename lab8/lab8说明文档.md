@@ -40,22 +40,22 @@ function prev_img() {
 
 通过js原生定时器```setInterval()```实现每隔2000ms调用一次```next_img()```函数。
 ```js
-	function play() {
-        auto_play = setInterval("next_img()", 2000);
-    }
+function play() {
+	auto_play = setInterval("next_img()", 2000);
+}
 ```
 当鼠标移入container时停止自动播放。
 ```js
-	container.onmouseenter=function(e){
-        clearInterval(auto_play);
-    };
+container.onmouseenter=function(e){
+	clearInterval(auto_play);
+};
 ```
 当鼠标移出container时重新设置定时器
 ```js
-	container.onmouseleave=function (e) {
-        console.log('restart');
-        play();
-    };
+container.onmouseleave=function (e) {
+	console.log('restart');
+	play();
+};
 ```
 
 
@@ -70,22 +70,22 @@ function prev_img() {
 核心思想是在表格的```<td><\td>```上挂click事件处理器，当点击动作发生时，改变其innerHTML，使其成为```<td><input><\td>```，即可实现输入。
 1. 为了使表格原有内容不被删去：
 ```js
-	input.val(cell.html());
-    cell.html(input);
+input.val(cell.html());
+cell.html(input);
 ```
 2. 为了使点击其他地方时保存输入值：
 ```js
-	input.blur(function(){
-        cell.html($(this).val());
-	});
+input.blur(function(){
+	cell.html($(this).val());
+});
 ```
 3. 为了使光标移到第一个：
 ```js
-	input.each(function() {
-		let elem = this;
-		setTimeout(function () {
-			elem.focus();
-			elem.setSelectionRange(0, 0)
-		}, 10)
-	});
+input.each(function() {
+	let elem = this;
+	setTimeout(function () {
+		elem.focus();
+		elem.setSelectionRange(0, 0)
+	}, 10)
+});
 ```
